@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CSC C11 - Assignment 3 - Clustering
+% Record here your answers to the questions in the handout for
+% part 2 of the assignment.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EACH ANSWER MUST BE NO MORE THAN 3 LINES OF TEXT - LONGER
+% ANSWERS WILL BE IGNORED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%
+%%  Step 0
+%%%%%%%%%%
+
+1) What is the average sparsity of input vectors? (in [0, 1])
+0.9866
+2) Find the 10 most common terms, find the 10 least common terms.  (list, separated by commas)
+Most common: [year, peopl, on, game, time, first, govern, go, world, get]
+Least common: [113bn, 900m, ba, Â£125m, Â£59m, Â£6, Â£160m, Â£197bn, pariba, propel]   
+3) What is the average frequency for non-zero vector entries?
+1.4525
+%%%%%%%%%%
+%% Step 1
+%%%%%%%%%%
+
+1) Can you categorize the topic for each cluster? (list, comma separated)
+Mobile phones, Ireland and England game, government and labour, best game, film and music awards
+2) What factors make clustering difficult?
+Choosing initial centers would affect the outcome of our clusters.
+3) Will we get better results with a lucky initial guess for cluster centers?
+   (yes/no and a short explanation of why)
+Yes we would, because the initial cluster centers have a big effect on our finished clusters.   
+%%%%%%%%%%
+%% Step 2
+%%%%%%%%%%
+
+1) What problem from step 1 is solved now?
+We normalize the input document vectors in this step, which helps get rid of the problem of high word frequency which should not be accounted for.
+2) What are the topics for clusters?
+England game, market increase, Yukon oil companies, technology and games, Yukon election
+3) Is the result better or worse than step 1? (give a short explanation as well)
+Better, because we are now using normalized data.
+%%%%%%%%%%
+%% Step 3
+%%%%%%%%%%
+
+1) What are the topics for clusters?
+England win, government and banks, mobile phones, film awards, government and labour.
+2) Why is the clustering better now?
+This is because we pre-process each document, and it will have both the original words as well as words highly related to the originals.
+3) What is the general lesson you learned in clustering sparse, high-dimensional
+   data?
+We need to 'clean' the data first, because of the nature of sparse, high-dimensional data. Otherwise, we'd have to get lucky with the center initialization.
+%%%%%%%%%%
+%% Step 4
+%%%%%%%%%%
+
+1) What is the total error difference between K-Means++ and random center initialization?
+5
+2) What is the mean and variance of total errors after running K-Means++ 5 times?
+Mean 5, Variance 0
+3) Do the training errors appear to be more consistent?
+Yes they are way more consistent, giving the same answer each time.
+4) Do the topics appear to be more meaningful?
+Yes they do, because almost all the words in the word cloud seem to relate.
+%%%%%%%%%%
+%% Step 6
+%%%%%%%%%%
+
+1) Do the points from different classes look reasonably separable in this space?
+They do look reasonably separable. When rotating the graph and looking at different angles, we can see that the 3 colours point in 3 different directions.   
+
+%%%%%%%%%%%%% End of questions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
